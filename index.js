@@ -34,3 +34,25 @@ class Library {
       this.category = category;
     }
   }
+  // Create instances of the Library, Book, and ReferenceBook classes
+const library = new Library();
+
+// Add books to the library
+const book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "9780743273565");
+const book2 = new Book("To Kill a Mockingbird", "Harper Lee", "9780060935467");
+const book3 = new ReferenceBook("1984", "George Orwell", "9780451524935", "Dystopian Fiction");
+
+library.addBook(book1);
+library.addBook(book2);
+library.addBook(book3);
+
+// Display available books
+library.displayAvailableBooks();
+
+console.log("\nRemoving book...");
+
+// Remove a book from the library
+library.removeBook("9780743273565");
+
+// Display available books again
+library.displayAvailableBooks();
