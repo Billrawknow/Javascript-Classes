@@ -34,7 +34,7 @@ class Library {
       this.category = category;
     }
   }
-  // Create instances of the Library, Book, and ReferenceBook classes
+  //Create instances of the Library, Book, and ReferenceBook classes
 const library = new Library();
 
 // Add books to the library
